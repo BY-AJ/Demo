@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/list_item_bg_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.itcast.yb.googleplay.view.RationLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:ratio="2.43"
+            >
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:src="@drawable/subject_default"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.itcast.yb.googleplay.view.RationLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="标题"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
